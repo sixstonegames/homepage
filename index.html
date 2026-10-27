@@ -131,11 +131,12 @@
   .top.show .fx{opacity:1;transform:none}
   .top a.nav{transition:color .3s}
   .top a.nav:hover,.lang button:hover{color:#fff}
-  .lang{display:flex;gap:6px;align-items:center}
-  .lang{margin-left:8px;font-size:15px}
-  .lang button{background:none;border:0;cursor:pointer;color:#8f8f97;font:inherit;letter-spacing:.1em;padding:2px}
-  .lang button.on{color:#fff}
-  .lang span{color:#55555c}
+  .lang{display:flex;gap:4px;align-items:center}
+  .lang{margin-left:8px;font-size:15px;border:1px solid #5a5a62;padding:5px 6px 5px 10px;text-shadow:none}
+  .lang svg{width:17px;height:17px;color:#e4e4e8;margin-right:6px;flex:none}
+  .lang button{background:none;border:0;cursor:pointer;color:#b4b4bc;font:inherit;font-weight:600;letter-spacing:.1em;padding:3px 9px;transition:background .3s,color .3s}
+  .lang button.on{background:#d4d4da;color:#0b0b0c;font-weight:700}
+  .lang button.on:hover{color:#0b0b0c}
 
   /* ───────── 메인 ───────── */
   .hero{
@@ -269,7 +270,9 @@
     .brand{gap:10px}
     .brand img{width:40px;height:40px}
     .brand span{font-size:15px;letter-spacing:.1em}
-    .lang{font-size:14px}
+    .lang{font-size:13px;padding:4px 4px 4px 8px}
+    .lang svg{width:15px;height:15px;margin-right:4px}
+    .lang button{padding:3px 7px}
     .hero p{font-size:19px;letter-spacing:.08em}
     section{padding:96px 16px}
     .info{padding:22px 20px 24px}
@@ -303,7 +306,7 @@
   <a class="nav fx" href="#apps">APPS</a>
   <a class="nav fx" href="#contact">CONTACT</a>
   <div class="lang fx">
-    <button data-set="ko" class="on">KO</button><span>/</span><button data-set="en">EN</button>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><ellipse cx="12" cy="12" rx="4" ry="9.2"/><path d="M3 12h18M4.6 7.2h14.8M4.6 16.8h14.8"/></svg><button data-set="ko" class="on" aria-label="한국어">KO</button><button data-set="en" aria-label="English">EN</button>
   </div>
 </header>
 
